@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    max-width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    line-height: 1.5;
+    font-size: 1.8rem;
+    color: #4f4f4f;
+}
+
+h1, h2, h3{
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #266035;
+}
+
+section{
+    padding:4%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+}
+
+.logo{
+    width: 6%;
+}
+
+.logo img{
+    width: 60%;
+}
+
+.links{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header{
+    height: 80vh;
+    display: flex;
+    background-image: url('/images/header.jpg');
+    background-size:100vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.cta h1{
+    color: white;
+}
+
+.cta button{
+    color: #266035;
+}
+
+#about{
+    display: flex;
+    justify-content: flex-end;
+    background-image: url('/images/about-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20% 0;
+}
+
+#about div{
+    width: 20%;
+    margin-right: 10%;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.container .text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0; 
+}
+
+.bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container p{
+    text-align: center;
+}
+
+.container div{
+    width: 50%;
+}
+
+.succulents{
+    background-image: url('/images/succulants.jpg');
+}
+
+.cacti{
+    background-image: url('/images/cacti.jpg');
+}
+
+.tropicals{
+    background-image: url('/images/tropicals.jpg');
+}
+
+#plants h2,h3{
+color:#266035
+}
+
+footer{
+    padding: 4% 0;
+    background-color: #266035;
+    color: white;
+}
+
+.footer-container{
+    display:flex
+}
+
+.footer .find-us-here, .footer-img{
+    width: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.img-wrapper{
+    width: 50%;
+}
+
+.copyright{
+    text-align: right;
+    margin-right: 10%;
+}
+
+@media (max-width: 800px) {
+    #about{
+        background-position: left bottom;
+    }
+
+    #about div{
+        margin-top: 5%;
+        width: 35%;
+    }
+
+    .container p{
+        text-align: left;
+    }
+
+    .container .text .div{
+        width: 70%;
+    }
+
+    .container{
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .img-wrapper{
+        width: 70%;
+    }
+}
